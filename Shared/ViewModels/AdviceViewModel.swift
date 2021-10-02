@@ -5,12 +5,12 @@
 //  Created by Russell Gordon on 2021-09-17.
 //
 
-import Foundation
+import SwiftUI
 
-class AdviceViewModel {
+class AdviceViewModel: ObservableObject {
     
     // History of advice sessions
-    var sessions: [Session] = []    // empty array to start
+    @Published var sessions: [Session] = []    // empty array to start
     
     // Given a question, provide some advice
     // Library shortcut: Command-Shift-L

@@ -11,6 +11,13 @@
 		0E59619626F4EFF2007C535B /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619526F4EFF2007C535B /* Magic8Ball.swift */; };
 		0E59619826F4F314007C535B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619726F4F314007C535B /* Session.swift */; };
 		0E59619C26F4F5FC007C535B /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619B26F4F5FC007C535B /* AdviceViewModel.swift */; };
+		FB7D02F62708A7C200412D90 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619B26F4F5FC007C535B /* AdviceViewModel.swift */; };
+		FB7D02F72708A7D500412D90 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619526F4EFF2007C535B /* Magic8Ball.swift */; };
+		FB7D02F82708A7D500412D90 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619726F4F314007C535B /* Session.swift */; };
+		FBDA66AE2708A292004C8A25 /* IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA66AD2708A292004C8A25 /* IOSApp.swift */; };
+		FBDA66B02708A292004C8A25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA66AF2708A292004C8A25 /* ContentView.swift */; };
+		FBDA66B22708A29F004C8A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDA66B12708A29F004C8A25 /* Assets.xcassets */; };
+		FBDA66B52708A29F004C8A25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDA66B42708A29F004C8A25 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +33,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E59618A26F4ED23007C535B /* MVVM-Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MVVM-Magic8Ball"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E59618A26F4ED23007C535B /* macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = macOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E59618D26F4ED23007C535B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0E59619526F4EFF2007C535B /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
 		0E59619726F4F314007C535B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0E59619B26F4F5FC007C535B /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
+		FBDA66AB2708A292004C8A25 /* IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDA66AD2708A292004C8A25 /* IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSApp.swift; sourceTree = "<group>"; };
+		FBDA66AF2708A292004C8A25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBDA66B12708A29F004C8A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDA66B42708A29F004C8A25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0E59618726F4ED23007C535B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA66A82708A292004C8A25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,7 +66,9 @@
 		0E59618126F4ED23007C535B = {
 			isa = PBXGroup;
 			children = (
-				0E59618C26F4ED23007C535B /* MVVM-Magic8Ball */,
+				FBDA66B92708A2E6004C8A25 /* Shared */,
+				0E59618C26F4ED23007C535B /* macOs */,
+				FBDA66AC2708A292004C8A25 /* IOS */,
 				0E59618B26F4ED23007C535B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,19 +76,18 @@
 		0E59618B26F4ED23007C535B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E59618A26F4ED23007C535B /* MVVM-Magic8Ball */,
+				0E59618A26F4ED23007C535B /* macOS */,
+				FBDA66AB2708A292004C8A25 /* IOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E59618C26F4ED23007C535B /* MVVM-Magic8Ball */ = {
+		0E59618C26F4ED23007C535B /* macOs */ = {
 			isa = PBXGroup;
 			children = (
-				0E59619A26F4F535007C535B /* ViewModels */,
 				0E59619926F4F522007C535B /* Views */,
-				0E59619426F4EFB5007C535B /* Model */,
 			);
-			path = "MVVM-Magic8Ball";
+			path = macOs;
 			sourceTree = "<group>";
 		};
 		0E59619426F4EFB5007C535B /* Model */ = {
@@ -95,12 +115,48 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		FBDA66AC2708A292004C8A25 /* IOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA66AD2708A292004C8A25 /* IOSApp.swift */,
+				FBDA66BA2708A33F004C8A25 /* Views */,
+				FBDA66B12708A29F004C8A25 /* Assets.xcassets */,
+				FBDA66B32708A29F004C8A25 /* Preview Content */,
+			);
+			path = IOS;
+			sourceTree = "<group>";
+		};
+		FBDA66B32708A29F004C8A25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA66B42708A29F004C8A25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBDA66B92708A2E6004C8A25 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0E59619426F4EFB5007C535B /* Model */,
+				0E59619A26F4F535007C535B /* ViewModels */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FBDA66BA2708A33F004C8A25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA66AF2708A292004C8A25 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E59618926F4ED23007C535B /* MVVM-Magic8Ball */ = {
+		0E59618926F4ED23007C535B /* macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "MVVM-Magic8Ball" */;
+			buildConfigurationList = 0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
 				0E59618626F4ED23007C535B /* Sources */,
 				0E59618726F4ED23007C535B /* Frameworks */,
@@ -110,10 +166,27 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM-Magic8Ball";
+			name = macOS;
 			productName = "MVVM-Magic8Ball";
-			productReference = 0E59618A26F4ED23007C535B /* MVVM-Magic8Ball */;
+			productReference = 0E59618A26F4ED23007C535B /* macOS */;
 			productType = "com.apple.product-type.tool";
+		};
+		FBDA66AA2708A292004C8A25 /* IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDA66B62708A29F004C8A25 /* Build configuration list for PBXNativeTarget "IOS" */;
+			buildPhases = (
+				FBDA66A72708A292004C8A25 /* Sources */,
+				FBDA66A82708A292004C8A25 /* Frameworks */,
+				FBDA66A92708A292004C8A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOS;
+			productName = IOS;
+			productReference = FBDA66AB2708A292004C8A25 /* IOS.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -126,6 +199,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					0E59618926F4ED23007C535B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					FBDA66AA2708A292004C8A25 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -143,10 +219,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E59618926F4ED23007C535B /* MVVM-Magic8Ball */,
+				0E59618926F4ED23007C535B /* macOS */,
+				FBDA66AA2708A292004C8A25 /* IOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDA66A92708A292004C8A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDA66B52708A29F004C8A25 /* Preview Assets.xcassets in Resources */,
+				FBDA66B22708A29F004C8A25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E59618626F4ED23007C535B /* Sources */ = {
@@ -157,6 +246,18 @@
 				0E59618E26F4ED23007C535B /* main.swift in Sources */,
 				0E59619626F4EFF2007C535B /* Magic8Ball.swift in Sources */,
 				0E59619826F4F314007C535B /* Session.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA66A72708A292004C8A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7D02F72708A7D500412D90 /* Magic8Ball.swift in Sources */,
+				FB7D02F82708A7D500412D90 /* Session.swift in Sources */,
+				FB7D02F62708A7C200412D90 /* AdviceViewModel.swift in Sources */,
+				FBDA66B02708A292004C8A25 /* ContentView.swift in Sources */,
+				FBDA66AE2708A292004C8A25 /* IOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +401,69 @@
 			};
 			name = Release;
 		};
+		FBDA66B72708A29F004C8A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IOS/Preview Content\"";
+				DEVELOPMENT_TEAM = MVTMGC7XMB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.stevenzhang.IOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBDA66B82708A29F004C8A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IOS/Preview Content\"";
+				DEVELOPMENT_TEAM = MVTMGC7XMB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.stevenzhang.IOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -312,11 +476,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "MVVM-Magic8Ball" */ = {
+		0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E59619226F4ED23007C535B /* Debug */,
 				0E59619326F4ED23007C535B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDA66B62708A29F004C8A25 /* Build configuration list for PBXNativeTarget "IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDA66B72708A29F004C8A25 /* Debug */,
+				FBDA66B82708A29F004C8A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
